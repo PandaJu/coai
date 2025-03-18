@@ -110,7 +110,7 @@ func (c *ChatInstance) ProcessLine(data string) (string, error) {
 			}
 			if c.isFirstReasoning {
 				c.isFirstReasoning = false
-				return fmt.Sprintf(">%s", content), nil
+				return fmt.Sprintf("> %s", content), nil
 			}
 			return content, nil
 		}
